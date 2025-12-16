@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio of G. Chakradhar">
+    <title>Home | G. Chakradhar</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">MyPortfolio</div>
+        <ul class="nav-links">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="aboutme.html">About Me</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+        <div class="menu-toggle" id="mobile-menu" aria-label="Toggle Menu"><i class="fas fa-bars"></i></div>
+    </nav>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h2>I am <span class="highlight">G. Chakradhar</span></h2>
+            <p>
+                Computer Science student with skills in problem-solving and software development. 
+                A quick learner and a team player, ready to contribute to challenging projects. 
+                Skilled in strategic project management and team leadership. Seeking a challenging 
+                executive role to leverage engineering expertise and drive engineering excellence. 
+                Committed to staying updated with the latest industry trends and technologies.
+            </p>
+            <a href="skills.html" class="btn btn-explore">Explore My Skills</a>
+        </div>
+        
+        <div class="hero-image">
+            <img src="Profile Picture.png" alt="Profile Picture" onerror="this.src='https://via.placeholder.com/350'">
+        </div>
+    </section>
+
+    <section id="contact" class="section-container">
+        <h2 class="section-title">Get In Touch</h2>
+        
+        <form id="contact-form">
+            
+            <div class="input-group">
+                <input type="text" id="name" name="name" class="input-field" required placeholder=" ">
+                <label for="name" class="input-label">Your Name</label>
+            </div>
+            
+            <div class="input-group">
+                <input type="email" id="email" name="email" class="input-field" required placeholder=" ">
+                <label for="email" class="input-label">Your Email</label>
+            </div>
+            
+            <div class="input-group">
+                <select id="gender" name="gender" class="input-field">
+                    <option value="" disabled selected hidden></option> 
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                </select>
+                <label for="gender" class="input-label label-gender">Gender</label>
+            </div>
+
+            <div class="input-group">
+                <textarea id="message" name="message" class="input-field" rows="4" required placeholder=" "></textarea>
+                <label for="message" class="input-label">Your Message</label>
+            </div>
+
+            <button type="submit" class="btn">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Chakradhar's Portfolio. All Rights Reserved.</p>
+    </footer>
+
+    <div id="custom-alert" class="custom-alert-overlay">
+        <div class="custom-alert-box">
+            <div class="custom-alert-icon"><i class="fas fa-crown"></i></div>
+            <h3 class="custom-alert-title">Success!</h3>
+            <p class="custom-alert-message" id="alert-msg">Message sent successfully!</p>
+            <button class="custom-alert-btn" onclick="closeAlert()">Excellent</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
