@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skills | G. Chakradhar</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">MyPortfolio</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="aboutme.html">About Me</a></li>
+            <li><a href="skills.html" class="active">Skills</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+        <div class="menu-toggle" id="mobile-menu"><i class="fas fa-bars"></i></div>
+    </nav>
+
+    <section class="section-container">
+        <h2 class="section-title">Technical Arsenal</h2>
+        <div class="skills-grid">
+            
+            <div class="skill-card">
+                <i class="fas fa-file-powerpoint"></i>
+                <h3>PPT Creator</h3>
+            </div>
+
+            <div class="skill-card clickable-card" onclick="toggleSection('animator-section')">
+                <i class="fas fa-robot"></i>
+                <h3>AI 3D Animator</h3>
+                <p class="click-hint">(Click to Reveal)</p>
+            </div>
+
+            <div class="skill-card clickable-card" onclick="toggleSection('webdev-section')">
+                <i class="fas fa-laptop-code"></i>
+                <h3>Web Developer</h3>
+                <p class="click-hint">(Click to Reveal)</p>
+            </div>
+
+        </div>
+
+        <div id="animator-section" class="hidden-content">
+            <h3 class="royal-title">Animation Works</h3>
+            <div class="royal-btn-container">
+                <a href="https://youtube.com/playlist?list=PLOEM9OunEbjs_Pz0-hOJzxPNDO9I3-TgS&si=UA8wp99FKX6j0CKg" target="_blank" rel="noopener noreferrer" class="royal-blue-btn">
+                    <span>Watch Animation</span>
+                </a>
+            </div>
+        </div>
+
+        <div id="webdev-section" class="hidden-content">
+            <h3 class="royal-title">Web Projects</h3>
+            <div class="royal-btn-container">
+                <a href="https://chakri2405.github.io/chakri-portfolio/" target="_blank" rel="noopener noreferrer" class="royal-blue-btn"><span>Mini Portfolio</span></a>
+                <a href="https://chakri2405.github.io/dgca-hub/" target="_blank" rel="noopener noreferrer" class="royal-blue-btn"><span>DGCA EXAM</span></a>
+                <a href="https://chakri142.github.io/my-chess-/" target="_blank" rel="noopener noreferrer" class="royal-blue-btn"><span>CHESS</span></a>
+            </div>
+        </div>
+
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Chakradhar's Portfolio. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
